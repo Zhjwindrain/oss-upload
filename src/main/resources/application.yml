@@ -1,0 +1,33 @@
+spring:
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+  datasource:
+    url: jdbc:mysql://localhost:3306/upload?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true #数据库名为upload
+    username: root #数据库账号
+    password: xxxxxxx #数据库密码
+    driverClassName: com.mysql.cj.jdbc.Driver
+    platform: mysql
+  jpa:
+    database: MYSQL
+    show-sql: true
+    properties:
+      hibernate:
+        jdbc:
+          batch_size: 500
+          batch_versioned_data: true
+        hbm2ddl:
+          auto: update
+
+oss.bucketName: xxxxxxx #你的阿里云bucket名字
+oss.accessKey: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx #你的阿里云accesskeyId
+oss.secretKey: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx #你的阿里云accesskeySecret
+oss.region: oss-cn-shanghai.aliyuncs.com #你的阿里云endpoint
+
+cos.bucketName: xxxxxxxxx-xxxxxxxx #你的腾讯云bucket名字
+cos.accessKey: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx #你的腾讯云accesskeyId
+cos.secretKey: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx #你的腾讯云accesskeySecret
+cos.region: ap-nanjing #你的腾讯云地区
+
+server:
+  port: 8080
