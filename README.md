@@ -10,7 +10,6 @@
 
 5. 打开网页输入localhost:8080,展示页面
 
-   ![image-20210724161705842](C:\Users\dell\AppData\Roaming\Typora\typora-user-images\image-20210724161705842.png)
-
    
+
 
